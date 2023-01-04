@@ -1,1 +1,10 @@
 @use '../abstracts' as *;
+
+body {
+  font-family: $primaryFont;
+  background-color: var(--neutral-clr-300);
+}
+
+.container {
+  padding: 0 1rem;
+}

@@ -28,3 +28,59 @@ a,
 span {
   display: inline-block;
 }
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--neutral-clr-300);
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.p-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sidebar {
+  height: 10.813rem;
+  background-image: url(../../images/bg-sidebar-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.sidebar__steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1rem 0;
+}
+.sidebar__step-info ol {
+  text-align: center;
+  user-select: none;
+  font-size: 1.3rem;
+  margin: 0 1.063rem;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--neutral-clr-200);
+  border: 2px solid var(--neutral-clr-200);
+  transition: background-color 0.2s ease;
+}
+.sidebar__step-info ol:hover {
+  background-color: var(--accent-clr-200);
+  color: var(--accent-clr-300);
+}
+.sidebar__step-text {
+  display: none;
+}
