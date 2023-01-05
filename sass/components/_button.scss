@@ -1,0 +1,15 @@
+.btn {
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  border: 0;
+  font-family: inherit;
+  background-color: var(--accent-clr-300);
+  color: var(--neutral-clr-200);
+  font-size: 1rem;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

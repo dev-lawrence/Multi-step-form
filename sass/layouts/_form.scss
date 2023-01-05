@@ -1,0 +1,27 @@
+.form-step {
+  background-color: var(--neutral-clr-200);
+  margin-bottom: 2.125rem;
+  padding: 2.125rem 1.5rem;
+  border-radius: 0.7rem;
+  display: none;
+
+  &__title {
+    margin-bottom: 2rem;
+
+    h1 {
+      color: var(--accent-clr-300);
+      font-weight: 700;
+      margin-bottom: 0.7rem;
+      font-size: 2rem;
+    }
+
+    p {
+      color: var(--neutral-clr-150);
+    }
+  }
+}
+
+.form-step.active {
+  margin-top: -4.5rem;
+  display: block;
+}

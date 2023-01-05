@@ -1,0 +1,41 @@
+@use '../abstracts' as *;
+
+.step-one {
+  .input-group {
+    position: relative;
+    label {
+      margin-bottom: 0.4rem;
+      color: var(--accent-clr-300);
+      font-weight: 400;
+    }
+    input {
+      width: 100%;
+      height: 39px;
+      border-radius: 0.2rem;
+      border: 1.5px solid var(--neutral-clr-150);
+      margin-bottom: 1.313rem;
+      outline: none;
+      font-family: inherit;
+      padding-left: 1rem;
+    }
+
+    ::placeholder {
+      color: var(--neutral-clr-400);
+    }
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
+
+  .err-msg {
+    position: absolute;
+    right: 0;
+    color: var(--accent-clr-400);
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+}

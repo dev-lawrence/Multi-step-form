@@ -66,22 +66,23 @@
           <!-- Sidebar end -->
 
           <!-- Form steps start -->
-          <form class="form">
+          <form class="form container">
             <!-- Step 1 start -->
             <div class="form-step step-one active">
-              <div class="form-step-title">
+              <div class="form-step__title">
                 <h1>Personal info</h1>
                 <p>
                   Please provide your name, email address, and phone number.
                 </p>
               </div>
               <div class="input-group">
-                <label for="name">Name</label>
+                <div class="err-msg">This field is required</div>
+                <label for="name">Name</label><br />
                 <input type="text" id="name" placeholder="e.g. Stephen King" />
               </div>
 
               <div class="input-group">
-                <label for="email">Email Address</label>
+                <label for="email">Email Address</label><br />
                 <input
                   type="text"
                   id="email"
@@ -90,7 +91,7 @@
               </div>
 
               <div class="input-group">
-                <label for="phone">Phone Number</label>
+                <label for="phone">Phone Number</label><br />
                 <input
                   type="text"
                   id="phone"
@@ -98,13 +99,15 @@
                 />
               </div>
 
-              <button class="next-btn">Next Step</button>
+              <div class="button">
+                <button class="btn next-btn">Next Step</button>
+              </div>
             </div>
             <!-- Step 1 end -->
 
             <!-- Step 2 start -->
             <div class="form-step step-two">
-              <div class="form-step-title">
+              <div class="form-step__title">
                 <h1>Select your plan</h1>
                 <p>You have the option of monthly or yearly billing.</p>
               </div>
@@ -158,15 +161,15 @@
               </div>
 
               <div class="buttons">
-                <button class="prev">Go Back</button>
-                <button class="next">Next Step</button>
+                <button class="btn prev-btn">Go Back</button>
+                <button class="btn next-btn">Next Step</button>
               </div>
             </div>
             <!-- Step 2 end -->
 
             <!-- Step 3 start -->
             <div class="form-step step-three">
-              <div class="form-step-title">
+              <div class="form-step__title">
                 <h1>Pick add-ons</h1>
                 <p>Add-ons help enhance your gaming experience.</p>
               </div>
@@ -215,15 +218,15 @@
               </div>
 
               <div class="buttons">
-                <button class="prev">Go Back</button>
-                <button class="next">Next Step</button>
+                <button class="btn prev-btn">Go Back</button>
+                <button class="btn next-btn">Next Step</button>
               </div>
             </div>
             <!-- Step 3 end -->
 
             <!-- Step 4 start -->
             <div class="form-step step-four">
-              <div class="form-step-title">
+              <div class="form-step__title">
                 <h1>Finishing up</h1>
                 <p>Double-check everything looks OK before confirming.</p>
               </div>
@@ -263,8 +266,8 @@
               </div>
 
               <div class="buttons">
-                <button class="prev">Go Back</button>
-                <button class="next">Confirm</button>
+                <button class="btn prev-btn">Go Back</button>
+                <button class="btn next-btn">Confirm</button>
               </div>
             </div>
             <!-- Step 4 end -->
