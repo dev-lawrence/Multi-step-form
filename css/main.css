@@ -43,7 +43,31 @@ body {
 .container {
   padding: 0 1rem;
 }
+@media (min-width: 75rem) {
+  .container {
+    width: 1100px;
+    margin: 0 auto;
+    background-color: var(--neutral-clr-200);
+    border-radius: 0.7rem;
+    padding: 1rem 0;
+  }
+}
 
+@media (min-width: 75rem) {
+  .form-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .d-flex {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .p-0 {
   padding-left: 0;
   padding-right: 0;
@@ -74,6 +98,15 @@ p {
   padding: 2.125rem 1.5rem;
   border-radius: 0.7rem;
   display: none;
+  max-width: 500px;
+  margin: 0 auto;
+}
+@media (min-width: 75rem) {
+  .form-step {
+    max-width: 600px;
+    background-color: transparent;
+    border-radius: 0rem;
+  }
 }
 .form-step__title {
   margin-bottom: 2rem;
@@ -92,6 +125,11 @@ p {
   margin-top: -4.5rem;
   display: block;
 }
+@media (min-width: 75rem) {
+  .form-step.active {
+    margin-top: 0;
+  }
+}
 
 .sidebar {
   height: 10.813rem;
@@ -100,12 +138,29 @@ p {
   background-size: cover;
   background-position: center center;
 }
+@media (min-width: 75rem) {
+  .sidebar {
+    background-image: url(../../images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    border-radius: 0.7rem;
+    margin: 0 1rem;
+    width: 400px;
+  }
+}
 .sidebar__steps {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 2rem 1rem 0;
+}
+@media (min-width: 75rem) {
+  .sidebar__steps {
+    display: block;
+  }
 }
 .sidebar__step-info ol {
   text-align: center;
@@ -127,10 +182,40 @@ p {
   background-color: var(--accent-clr-200);
   color: var(--accent-clr-300);
 }
+@media (min-width: 75rem) {
+  .sidebar__step-info ol {
+    margin: 0;
+  }
+}
 .sidebar__step-text {
   display: none;
 }
+@media (min-width: 75rem) {
+  .sidebar__step-text {
+    display: block;
+    color: var(--neutral-clr-200);
+    margin-left: 1rem;
+    text-align: left;
+  }
+  .sidebar__step-text span {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 0.8rem;
+  }
+  .sidebar__step-text h5 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}
 
+@media (min-width: 75rem) {
+  .sidebar__step-info {
+    width: 100%;
+    display: flex;
+    margin-bottom: 2rem;
+  }
+}
 .step-one .input-group {
   position: relative;
 }
@@ -142,8 +227,8 @@ p {
 .step-one .input-group input {
   width: 100%;
   height: 39px;
-  border-radius: 0.2rem;
-  border: 1.5px solid var(--neutral-clr-150);
+  border-radius: 0.3rem;
+  border: 1.5px solid var(--neutral-clr-350);
   margin-bottom: 1.313rem;
   outline: none;
   font-family: inherit;

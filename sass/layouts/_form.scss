@@ -1,9 +1,19 @@
+@use '../abstracts' as *;
+
 .form-step {
   background-color: var(--neutral-clr-200);
   margin-bottom: 2.125rem;
   padding: 2.125rem 1.5rem;
   border-radius: 0.7rem;
   display: none;
+  max-width: 500px;
+  margin: 0 auto;
+
+  @include extra-large {
+    max-width: 600px;
+    background-color: transparent;
+    border-radius: 0rem;
+  }
 
   &__title {
     margin-bottom: 2rem;
@@ -24,4 +34,8 @@
 .form-step.active {
   margin-top: -4.5rem;
   display: block;
+
+  @include extra-large {
+    margin-top: 0;
+  }
 }
