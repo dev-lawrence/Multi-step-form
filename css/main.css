@@ -98,9 +98,16 @@ p {
   color: var(--neutral-clr-150);
   transition: color 0.2s ease;
   font-weight: 500;
+  padding-left: 0;
 }
 .prev-btn:hover {
   color: var(--accent-clr-300);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .form-step {
@@ -364,11 +371,6 @@ p {
 }
 .step-two .plans .toggle__switch #year:checked ~ .toggle__button {
   left: 27px;
-}
-.step-two .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 @media (min-width: 75rem) {

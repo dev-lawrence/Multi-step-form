@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 .btn {
   padding: 0.8rem 1.5rem;
   cursor: pointer;
@@ -19,8 +21,13 @@
   color: var(--neutral-clr-150);
   transition: color 0.2s ease;
   font-weight: 500;
+  padding-left: 0;
 
   &:hover {
     color: var(--accent-clr-300);
   }
+}
+
+.buttons {
+  @include flex(center, space-between);
 }
