@@ -115,25 +115,25 @@
               <div class="plans">
                 <a class="plan" href="#">
                   <img src="./images/icon-arcade.svg" alt="" />
-                  <div class="info">
+                  <div class="plan__info">
                     <h4>Arcade</h4>
-                    <p class="arcade-price">$9/mo</p>
+                    <span class="arcade-price">$9/mo</span>
                   </div>
                 </a>
 
                 <a class="plan" href="#">
                   <img src="./images/icon-advanced.svg" alt="" />
-                  <div class="info">
+                  <div class="plan__info">
                     <h4>Advanced</h4>
-                    <p class="advance-price">$12/mo</p>
+                    <span class="advance-price">$12/mo</span>
                   </div>
                 </a>
 
                 <a class="plan" href="#">
                   <img src="./images/icon-pro.svg" alt="" />
-                  <div class="info">
+                  <div class="plan__info">
                     <h4>Pro</h4>
-                    <p class="pro-price">$15/mo</p>
+                    <span class="pro-price">$15/mo</span>
                   </div>
                 </a>
 
@@ -144,8 +144,7 @@
                     aria-label="price-toggle"
                     role="radiogroup"
                   >
-                    <label for="month">Monthly / </label>
-                    <label for="year">yearly</label>
+                    <label for="month">Monthly </label>
 
                     <div class="toggle__wrapper">
                       <input type="radio" name="theme" id="month" />
@@ -156,6 +155,8 @@
                       ></span>
                       <span aria-hidden="true" class="toggle__button"></span>
                     </div>
+
+                    <label for="year">yearly</label>
                   </fieldset>
                 </div>
               </div>

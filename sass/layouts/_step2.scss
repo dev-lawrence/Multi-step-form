@@ -1,1 +1,101 @@
 @use '../abstracts' as *;
+
+.step-two {
+  .plans {
+    .plan {
+      @include flex(center, flex-start);
+      border: 1px solid var(--neutral-clr-350);
+      padding: 1.213rem 1rem;
+      border-radius: $borderRadius;
+      transition: all 0.2s ease;
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-bottom: 1rem;
+      }
+
+      img {
+        margin-right: 0.9rem;
+      }
+
+      &__info {
+        h4 {
+          color: var(--accent-clr-300);
+          font-weight: 700;
+          font-size: 1.1rem;
+          margin-bottom: 0.3rem;
+        }
+
+        span {
+          color: var(--neutral-clr-150);
+          font-size: 0.9rem;
+        }
+      }
+
+      &:hover {
+        border-color: var(--accent-clr-350);
+        background-color: var(--neutral-clr-300);
+      }
+    }
+
+    // toogle switch
+
+    .toggle__switch {
+      user-select: none;
+
+      input[type='radio'] {
+        margin: 0 -2px 0 -2px;
+        opacity: 0;
+        width: 27px;
+        height: 24px;
+        cursor: pointer;
+
+        &:focus ~ .toggle__button {
+          border: 3px solid var(--accent-clr-300);
+        }
+      }
+
+      .toggle {
+        @include flex(flex-start, center);
+        margin: 2rem 0;
+        padding: 1.2rem;
+        border-radius: $borderRadius;
+        border: none;
+        background-color: var(--neutral-clr-300);
+
+        &__wrapper {
+          position: relative;
+          height: 24px;
+          margin: 0 1.5rem;
+        }
+
+        &__background {
+          background-color: var(--accent-clr-300);
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          border-radius: 24px;
+          pointer-events: none;
+        }
+
+        &__button {
+          position: absolute;
+          left: 2px;
+          top: 1.8px;
+          right: 100%;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          background-color: var(--neutral-clr-300);
+          transition: all 250ms ease-in-out;
+        }
+      }
+
+      #year:checked ~ .toggle__button {
+        left: 28px;
+      }
+    }
+  }
+}
