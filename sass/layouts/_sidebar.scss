@@ -47,6 +47,12 @@
     @include extra-large {
       margin: 0;
     }
+
+    // active step number
+    &.active {
+      background-color: var(--accent-clr-200);
+      color: var(--accent-clr-300);
+    }
   }
 
   &__step-text {

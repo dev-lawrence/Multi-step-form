@@ -187,6 +187,10 @@ p {
     margin: 0;
   }
 }
+.sidebar__step-info ol.active {
+  background-color: var(--accent-clr-200);
+  color: var(--accent-clr-300);
+}
 .sidebar__step-text {
   display: none;
 }
