@@ -2,7 +2,7 @@
 
 .form-step {
   background-color: var(--neutral-clr-200);
-  margin-bottom: 2.125rem;
+  // margin-bottom: 2.125rem;
   padding: 2.125rem 1.5rem;
   border-radius: 0.7rem;
   display: none;
@@ -13,6 +13,7 @@
     max-width: 600px;
     background-color: transparent;
     border-radius: 0;
+    padding: 0;
   }
 
   &__title {

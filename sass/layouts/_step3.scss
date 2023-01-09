@@ -1,0 +1,58 @@
+@use '../abstracts' as *;
+
+.add-ons {
+  //   @include extra-large {
+  //     height: 270px;
+  //   }
+
+  .add-on {
+    &--info {
+      @include flex(center, space-between);
+      border: 1px solid var(--neutral-clr-350);
+      padding: 1.213rem 1rem;
+      border-radius: $borderRadius;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-bottom: 1rem;
+      }
+
+      &__flex {
+        @include flex(center, flex-start);
+      }
+
+      &:hover {
+        border-color: var(--accent-clr-350);
+        background-color: var(--neutral-clr-300);
+      }
+
+      span {
+        color: var(--accent-clr-350);
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+    }
+
+    input[type='checkbox'] {
+      width: 19px;
+      height: 19px;
+    }
+
+    &--text {
+      margin-left: 1.125rem;
+
+      h4 {
+        color: var(--accent-clr-300);
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin-bottom: 0.3rem;
+      }
+
+      p {
+        color: var(--neutral-clr-150);
+      }
+    }
+  }
+}
