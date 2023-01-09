@@ -93,6 +93,16 @@ p {
   opacity: 0.9;
 }
 
+.prev-btn {
+  background-color: transparent;
+  color: var(--neutral-clr-150);
+  transition: color 0.2s ease;
+  font-weight: 500;
+}
+.prev-btn:hover {
+  color: var(--accent-clr-300);
+}
+
 .form-step {
   background-color: var(--neutral-clr-200);
   margin-bottom: 2.125rem;
@@ -265,11 +275,32 @@ p {
   border-radius: 0.5rem;
   transition: all 0.2s ease;
 }
+@media (min-width: 75rem) {
+  .step-two .plans .plan {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-right: 1rem;
+    width: 200px;
+  }
+}
 .step-two .plans .plan:nth-child(1), .step-two .plans .plan:nth-child(2) {
   margin-bottom: 1rem;
 }
+@media (min-width: 75rem) {
+  .step-two .plans .plan:nth-child(1), .step-two .plans .plan:nth-child(2) {
+    margin-bottom: 0;
+  }
+}
 .step-two .plans .plan img {
   margin-right: 0.9rem;
+}
+@media (min-width: 75rem) {
+  .step-two .plans .plan img {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
 }
 .step-two .plans .plan__info h4 {
   color: var(--accent-clr-300);
@@ -295,9 +326,6 @@ p {
   height: 24px;
   cursor: pointer;
 }
-.step-two .plans .toggle__switch input[type=radio]:focus ~ .toggle__button {
-  border: 3px solid var(--accent-clr-300);
-}
 .step-two .plans .toggle__switch .toggle {
   display: flex;
   align-items: flex-start;
@@ -310,7 +338,7 @@ p {
 }
 .step-two .plans .toggle__switch .toggle__wrapper {
   position: relative;
-  height: 24px;
+  height: 25px;
   margin: 0 1.5rem;
 }
 .step-two .plans .toggle__switch .toggle__background {
@@ -325,8 +353,8 @@ p {
 }
 .step-two .plans .toggle__switch .toggle__button {
   position: absolute;
-  left: 2px;
-  top: 1.8px;
+  left: 4px;
+  top: 3px;
   right: 100%;
   width: 18px;
   height: 18px;
@@ -335,5 +363,18 @@ p {
   transition: all 250ms ease-in-out;
 }
 .step-two .plans .toggle__switch #year:checked ~ .toggle__button {
-  left: 28px;
+  left: 27px;
+}
+.step-two .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 75rem) {
+  .plan__flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
 }

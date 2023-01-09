@@ -13,3 +13,14 @@
     opacity: 0.9;
   }
 }
+
+.prev-btn {
+  background-color: transparent;
+  color: var(--neutral-clr-150);
+  transition: color 0.2s ease;
+  font-weight: 500;
+
+  &:hover {
+    color: var(--accent-clr-300);
+  }
+}
